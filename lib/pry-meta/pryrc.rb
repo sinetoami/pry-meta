@@ -26,9 +26,9 @@ begin
       .stagger_output("=> #{value.ai}", output)
   end
 
-  Pry.commands.alias_command 'c', 'continue'
-  Pry.commands.alias_command 's', 'step'
-  Pry.commands.alias_command 'n', 'next'
+  Pry.commands.alias_command('c', 'continue')
+  Pry.commands.alias_command('s', 'step')
+  Pry.commands.alias_command('n', 'next')
 rescue LoadError => error
   warn '=> Unable to load pry-meta'
 end

@@ -2,22 +2,27 @@ A meta package that includes the following gems:
 
 * [awesome_print](https://github.com/michaeldv/awesome_print)
 * [pry](https://github.com/pry/pry)
-* [pry-byebug](https://github.com/deivid-rodriguez/pry-byebug)
+* [pry-nav](https://github.com/nixme/pry-nav)
 * [pry-remote](https://github.com/Mon-Ouie/pry-remote)
+* [pry-stack_explorer](https://github.com/pry/pry-stack_explorer)
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem "pry-meta"
+    gem "pry-meta", :git => "git://github.com/sinetoami/pry-meta.git"
 
 And then execute:
 
     $ bundle
 
 Or install it yourself as:
-
-    $ gem install pry-meta
+```bash
+$ git clone https://github.com/sinetoami/pry-meta.git
+$ cd pry-meta
+$ gem build pry-meta.gemspec
+$ gem install pry-meta-{version}.gem
+```
 
 ## Contributing
 
